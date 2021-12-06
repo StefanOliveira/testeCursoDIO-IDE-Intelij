@@ -1,0 +1,45 @@
+Branches
+Use um branch para isolar o trabalho de desenvolvimento sem afetar outros branches no repositório. 
+Cada repositório tem um branch padrão e pode ter vários outros branches. 
+Você pode fazer merge de um branch em outro branch usando uma pull request.
+
+# Criar branch
+git checkout -b <branch>
+
+# Listar Branch atual
+git branch
+
+# Mover-se entre branchs
+git checkout <branch>
+
+# Mesclar branchs, mova-se para a principal
+git merge <branch-a-mesclar>
+
+# Renomear branch (Deve-se estar na branch a se alterar)
+git branch -m funcionalidade
+
+# Renomear fora da branch
+git branch -m <atual> <novo-nome>
+
+# Deletar branch
+git branch -d <branch>
+
+Stash
+git stash arquiva (ou faz o stash) de alterações que 
+você fez na cópia de trabalho durante um determinado 
+período, para que você possa trabalhar em outra coisa, 
+depois voltar e fazer a reaplicação mais tarde. 
+O stashing é útil quando você precisa alternar com 
+rapidez o contexto e trabalhar em outra coisa, mas está
+no meio da alteração de código e não está pronto para 
+fazer commit.
+
+# Adicionar arquivos a um stash
+git stash save "mensagem"
+
+# Listar stash
+git stash list
+
+# Alterar arquivo em stash
+git stash pop <stash>
+

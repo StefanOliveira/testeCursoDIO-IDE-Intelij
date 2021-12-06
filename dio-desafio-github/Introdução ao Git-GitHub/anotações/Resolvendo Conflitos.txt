@@ -1,0 +1,7 @@
+# Caso um arquivo tenha sido alterado no repositório master da web alterado 
+ao efetuar um push do código comitado uma falha será exibida informando que
+o código não corresponde com o original no repositório online, utilize o
+comando:
+git pull origin master
+
+# Após esse comando as alterações poderão ser enviadas ao repositório online.

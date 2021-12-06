@@ -1,0 +1,42 @@
+-SHA 1
+Algoritmo de encriptação - Secure Hash Algorithm.
+A encriptação gera um conjunto de caracteres de 40 dígitos.
+Alterado a cada acesso ou modificação no Git.
+É uma forma curta de representar um arquivo.
+#Ex. Comando
+openssl sha1 texto.txt
+
+-Objetos fundamentais
+Blobs
+Objeto que armazena metados dos arquivos gerados
+Contém o tipo, tamanho e conteúdo.
+---------------------
+Blob - Tamanho 42	|
+\0 					|
+"Conteudo"			|
+---------------------
+carlos.costa@4403-NB MINGW64 ~$ echo 'conteudo' | git hash-object --stdin
+fc31e91b26cf85a55e072476de7f263c89260eb1
+
+carlos.costa@4403-NB MINGW64 ~$ echo -e 'blob 9\0conteudo' | openssl sha1
+(stdin)= fc31e91b26cf85a55e072476de7f263c89260eb1
+
+
+Trees
+Armazenam Blobs, montar toda a estrutura e localizar
+onde estão os arquivos.
+-------------------------
+Tree - <Tamanho>		|
+\0 						|
+blob sa4d8s	texto.txt	|
+-------------------------
+
+Commits
+-git init
+-git add * (ou arquivo)
+-git commit -m (mensagem commit)
+-git push <origin> <master>
+
+-Sistema distribuído
+
+-Segurança

@@ -1,0 +1,14 @@
+Comandos Básicos para um bom desempenho no terminal
+GUI x CLI
+
+Windows
+-cd (Navegar diretórios)
+-dir (Listar diretórios/arquivos)
+-mkdir (Criar diretório)
+del/rmdir (excluir arquivos/diretórios)
+
+Unix
+-cd (Navegar diretórios)
+-ls (Listar diretórios/arquivos)
+-mkdir (Criar diretório)
+-rm -rf (excluir diretórios/arquivos)
